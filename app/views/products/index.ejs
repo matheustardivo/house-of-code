@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Products</title>
+  </head>
+  <body>
+    <h1>Product list</h1>
+
+    <table>
+      <thead>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Price</th>
+      </thead>
+      <tbody>
+        <% for (var i = 0; i < books.length; i++) { %>
+          <tr>
+            <td><%= books[i].id %></td>
+            <td><%= books[i].title %></td>
+            <td><%= books[i].description %></td>
+            <td><%= books[i].price %></td>
+          </tr>
+        <% } %>
+      </tbody>
+    </table>
+  </body>
+</html>
