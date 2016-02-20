@@ -5,7 +5,7 @@ http.get({
       port: 3000,
       path: '/products',
    headers: { 'Accept': 'application/json' }
-}, function(response) {
+}, (response) => {
   console.log("[DEBUG] Client response status code: ", response.statusCode);
 
   response.on('data', function(body) {

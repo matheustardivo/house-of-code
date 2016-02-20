@@ -1,4 +1,4 @@
-var ConnectionFactory = require('./ConnectionFactory')();
+var ConnectionFactory = require('../infra/ConnectionFactory')();
 
 function Product() {
   this._connectionFactory = new ConnectionFactory();
